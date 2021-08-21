@@ -28,13 +28,24 @@ public class Line {
 
 	public static void main(String[] args) {
 		Line L1 = new Line(-7, -4, 17, 6.5);
+		Line L2 = new Line(17, 6.5, -7, -4);
 		
 		System.out.println("Welcome to Line Comparison Computation Program\n");
 		
 		// Use case - 1
-		System.out.println("Length of Line 1 = " + L1.getLength());
+		System.out.println("Length of Line 1 = " + L1.getLength() + "\t" + "Length of Line 2 = " + L2.getLength());
 		System.out.println();
 		
-		
+		// Use case - 2
+		Double len1 = L1.getLength();
+		Double len2 = L2.getLength();
+
+		// Inbuilt function equals()
+		boolean result1 = len1.equals(len2);;
+		if (result1 == true) {
+			System.out.println("Length of Line 1 is equal to Line 2.");
+		} else {
+			System.out.println("Length of Line 1 is not equal to Line 2.");
+		}
 	}
 }
