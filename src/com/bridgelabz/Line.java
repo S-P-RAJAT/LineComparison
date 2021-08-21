@@ -1,7 +1,6 @@
 package com.bridgelabz;
 
 public class Line {
-	double x1, y1, x2, y2;
 
 	class Point {
 		double x;
@@ -46,6 +45,16 @@ public class Line {
 			System.out.println("Length of Line 1 is equal to Line 2.");
 		} else {
 			System.out.println("Length of Line 1 is not equal to Line 2.");
+		}
+		// Use case - 3
+		// Inbuilt function compareTo()
+		int result2 = len1.compareTo(len2);;
+		if (result2 == 0) {
+			System.out.println("Length of Line 1 is equal to Line 2.");
+		} else if (result2 > 0) {
+			System.out.println("Line 1 is longer than Line 2.");
+		} else {
+			System.out.println("Line 1 is smaller than Line 2.");
 		}
 	}
 }
