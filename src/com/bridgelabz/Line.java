@@ -1,17 +1,7 @@
 package com.bridgelabz;
 
-class Point {
-	double x;
-	double y;
-
-	public Point(double x, double y) {
-		this.x = x;
-		this.y = y;
-	}
-}
 
 public class Line {
-	double x1, y1, x2, y2;
 
 	private Point p1, p2;
 
@@ -21,7 +11,7 @@ public class Line {
 	}
 
 	public double getLength() {
-		return Math.round(Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2)) * 1000000d) / 1000000d;
+		return Math.round(Math.sqrt(Math.pow(p2.getXCoordinate() - p1.getXCoordinate(), 2) + Math.pow(p2.getYCoordinate() - p1.getYCoordinate(), 2)) * 1000000d) / 1000000d;
 	}
 
 	public boolean equals(Line L) {
