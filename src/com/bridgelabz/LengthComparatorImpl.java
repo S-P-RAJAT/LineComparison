@@ -5,6 +5,7 @@ public class LengthComparatorImpl implements LengthComparatorIF {
 
 	@Override
 	public void equals(Line firstLine, Line secondLine) {
+		// Use case - 1
 		Double lengthOfFirstLine = lengthCalculator.calculateLengthOfLine(firstLine);
 		Double lengthOfSecondLine = lengthCalculator.calculateLengthOfLine(secondLine);
 
